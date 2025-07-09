@@ -4,17 +4,19 @@
 @use '_variables' as var;
 @use '_mixins' as mix;
 
-/* logo */
 .logo {
-    @media #{var.$xs} {
-        text-align: center;
-    }
+  img {
+    width: 250px;       // Make it smaller (adjust as needed)
+    margin-left: -10px;  // Move it to the left
+    display: block;
+  }
 
-    &__6 {
-        @media #{var.$xs} {
-            padding-bottom: 15px;
-        }
+  @media #{var.$xs} {
+    img {
+      width: 150px;
+      margin-left: -5px;
     }
+  }
 }
 
 .header {

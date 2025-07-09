@@ -12,6 +12,7 @@ export class BreadcrumbOneComponent {
   @Input() bg?: string;
   @Input() title!: string;
   @Input() subtitle!: string;
+    @Input() showBackground: boolean = true;
 
   public bg_img = '/assets/img/page-title/page-title-1.jpg';
 
